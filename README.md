@@ -65,7 +65,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh 
-git clone https://github.com/ilyassatlassi/OOP.git
+git clone https://github.com/Tafloninno/TDD.git
   ```
   ```sh 
   cd Ruby-school-library bundle install
