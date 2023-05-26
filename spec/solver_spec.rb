@@ -13,6 +13,10 @@ describe Solver do
       expect(solver.factorial(10)).to eq(3_628_800)
     end
 
+    it 'raises an exception for negative numbers' do
+      expect { solver.factorial(-5) }.to raise_error(ArgumentError, 'Factorial input must be a non-negative integer')
+    end
+
     it 'raises an exception for non-integer inputs' do
       expect { solver.factorial(3.5) }.to raise_error(ArgumentError, 'Factorial input must be a non-negative integer')
       expect { solver.factorial('abc') }.to raise_error(ArgumentError, 'Factorial input must be a non-negative integer')
