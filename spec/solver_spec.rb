@@ -1,6 +1,6 @@
 require_relative '../solver'
 
-RSpec.describe Solver do
+describe Solver do
   let(:solver) { Solver.new }
 
   describe '#factorial' do
@@ -27,6 +27,28 @@ RSpec.describe Solver do
     it 'reverses the given word' do
       expect(solver.reverse('hello')).to eq('olleh')
       expect(solver.reverse('world')).to eq('dlrow')
+    end
+  end
+
+  describe '#fizzbuzz' do
+    it 'returns "fizz" when given a number divisible by 3' do
+      expect(solver.fizzbuzz(3)).to eq('fizz')
+      expect(solver.fizzbuzz(9)).to eq('fizz')
+    end
+
+    it 'returns "buzz" when given a number divisible by 5' do
+      expect(solver.fizzbuzz(5)).to eq('buzz')
+      expect(solver.fizzbuzz(20)).to eq('buzz')
+    end
+
+    it 'returns "fizzbuzz" when given a number divisible by both 3 and 5' do
+      expect(solver.fizzbuzz(15)).to eq('fizzbuzz')
+      expect(solver.fizzbuzz(30)).to eq('fizzbuzz')
+    end
+
+    it 'returns the number as a string for any other case' do
+      expect(solver.fizzbuzz(7)).to eq('7')
+      expect(solver.fizzbuzz(11)).to eq('11')
     end
   end
 end
