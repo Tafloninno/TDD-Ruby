@@ -22,4 +22,11 @@ describe Solver do
       expect { solver.factorial('abc') }.to raise_error(ArgumentError, 'Factorial input must be a non-negative integer')
     end
   end
+
+  describe '#reverse' do
+    it 'reverses the given word' do
+      expect(solver.reverse('hello')).to eq('olleh')
+      expect(solver.reverse('world')).to eq('dlrow')
+    end
+  end
 end
