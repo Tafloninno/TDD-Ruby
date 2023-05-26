@@ -1,5 +1,5 @@
 
-# 📗 Table of Contents
+# 📗 Test Driven Development
 
 - [📗 Table of Contents](#-table-of-contents)
 - [Ruby school library ](#ruby-school-library-)
@@ -20,9 +20,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# Ruby school library <a name="about-project"></a>
+# Test Driven Development <a name="about-project"></a>
 
-> **Ruby-school-library**  The goal of this Ruby project is to develop a digital solution for a school library. The system will enable the librarian to efficiently keep track of the books in the library and manage information about who borrows them.
+> **Test Driven Development** is a project that gives the idea of writing tests first and then the code.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -39,8 +39,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- Add Books
-- Add People
+- Class in ruby
+- TDD
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -56,7 +56,7 @@ In order to run this project you need:
 - Installed Ruby
 - Create a local directory that you want to clone the repository.
 - Open the command prompt in the created directory.
-- On the terminal run this command git clone https://github.com/ilyassatlassi/OOP.git
+- On the terminal run this command git clone https://github.com/Tafloninno/TDD.git
 
 
 
